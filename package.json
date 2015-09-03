@@ -1,0 +1,28 @@
+{
+  "name": "dynamic-bundle",
+  "description": "dynamically add dependencies from npm to the bundle before publishing",
+  "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me/)",
+  "bin": "cli.js",
+  "bugs": {
+    "url": "https://github.com/boennemann/dynamic-bundle/issues"
+  },
+  "dependencies": {
+    "multimatch": "^2.0.0",
+    "nopt": "^3.0.3"
+  },
+  "devDependencies": {
+    "semantic-release": "^4.3.4",
+    "standard": "^5.2.1"
+  },
+  "homepage": "https://github.com/boennemann/dynamic-bundle#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boennemann/dynamic-bundle.git"
+  },
+  "scripts": {
+    "test": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  }
+}
